@@ -48,10 +48,16 @@ const DataLayer = (() => {
   }
 
 
-  function getUniqueValues(field) {
-    return [...new Set(State.allQuestions.map(q => q[field]).filter(v => v !== undefined && v !== null && v !== ''))]
-      .sort((a, b) => typeof a === 'number' ? b - a : String(a).localeCompare(String(b)));
+  // function getUniqueValues(field) {
+  //   return [...new Set(State.allQuestions.map(q => q[field]).filter(v => v !== undefined && v !== null && v !== ''))]
+  //     .sort((a, b) => typeof a === 'number' ? b - a : String(a).localeCompare(String(b)));
+  // }
+   function getUniqueValues(field) {
+    return [...new Set(State.allQuestions.map(q => q[field]).filter(Boolean))].sort((a, b) =>
+      typeof a === 'number' ? b - a : String(a).localeCompare(String(b))
+    );
   }
+
 
   return { loadQuestions, getUniqueValues };
 })();
