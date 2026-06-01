@@ -352,7 +352,7 @@ const PDFGenerator = (() => {
   const PAGE_H           = 297;
   const MARGIN_LEFT_OUTER = 10;
   const MARGIN_LEFT_LINE  = 22;
-  const MARGIN_LEFT_TEXT  = 24;
+  const MARGIN_LEFT_TEXT  = 28;
   const MARGIN_RIGHT_LINE = 186;
   const MARGIN_TOP        = 20;
   const MARGIN_BOTTOM     = 18;
