@@ -373,7 +373,7 @@ const PDFGenerator = (() => {
   }
 
   function drawRightMarginNote(doc) {
-    doc.setFontSize(7);
+    doc.setFontSize(8);
     doc.setFont('helvetica', 'normal');
     doc.setTextColor(80, 80, 80);
     const noteLines = ['Candidates', 'must not', 'write on', 'this margin'];
@@ -385,7 +385,7 @@ const PDFGenerator = (() => {
   function drawFooter(doc, footerCode, pageNum) {
     const footerY = PAGE_H - 8;
     doc.setFontSize(8.5);
-    doc.setFont('helvetica', 'bold');
+    doc.setFont('helvetica', 'bold', 'italic');
     doc.setTextColor(0, 0, 0);
     doc.text(footerCode, MARGIN_LEFT_TEXT, footerY);
     doc.text(String(pageNum), PAGE_W / 2, footerY, { align: 'center' });
@@ -405,11 +405,11 @@ const PDFGenerator = (() => {
 
     // Question text with marks appended inline at the end
     doc.setFont('helvetica', 'normal');
-    doc.setFontSize(10.5);
+    doc.setFontSize(11);
     const fullText = `${questionText} (${marksText} marks)`;
     const lines = doc.splitTextToSize(fullText, textAreaWidth);
     let y = MARGIN_TOP + 5;
-    lines.forEach(line => { doc.text(line, MARGIN_LEFT_TEXT, y); y += 6; });
+    lines.forEach(line => { doc.text(line, MARGIN_LEFT_TEXT, y); y += 7; });
 
     drawFooter(doc, footerCode, pageNum);
   }
