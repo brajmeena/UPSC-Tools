@@ -46,6 +46,11 @@ const DataLayer = (() => {
        } else {
          console.warn('QUESTIONS_DATA not found.');
        }
+       if (typeof GS1_QUE !== 'undefined') {
+         combinedQuestions.push(...GS1_QUE);
+       } else {
+         console.warn('GS1_QUE not found.');
+       }
    
        // 2. Load geo questions and change their ID format
        if (typeof QUESTIONS_DATA_GEO_OPT !== 'undefined') {
