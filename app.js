@@ -421,7 +421,7 @@ const PDFGenerator = (() => {
   const MARGIN_RIGHT_TEXT = 186;  // text wraps before here
   const MARGIN_TOP        = 18;
   const MARGIN_BOTTOM     = 18;
-  const RIGHT_NOTE_X      = 294;  // "Candidates…" just outside right rule
+  const RIGHT_NOTE_X      = 194;  // "Candidates…" just outside right rule
 
   function pagesForMarks(marks) {
     if (marks === 10) return 2;
