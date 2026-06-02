@@ -1775,4 +1775,4 @@ const QUESTIONS_DATA_GEO_OPT =
     "marks": 15,
     "source": "UPSC"
   }
-]
+];
