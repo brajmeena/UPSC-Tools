@@ -54,7 +54,7 @@ const DataLayer = (() => {
            id: `GEO_${q.id}`     // Overwrite the id property (e.g., 1 becomes "GEO_1")
          }));
          combinedQuestions.push(...modifiedGeoQuestions);
-       } else {console.warn('GEO_OPT_QUE not found.');}
+       } else {console.warn('QUESTIONS_DATA_GEO_OPT not found.');}
    
        // 3. Update application state
        State.allQuestions = combinedQuestions;
