@@ -556,7 +556,7 @@ const QUESTIONS_DATA_GEO_OPT =
     "source": "UPSC"
   },
 
-  {"________Geo_2025_P1________": :"c"},
+  {"________Geo_2025_P1________": "c"},
   {
     "id": 47,
     "year": 2024,
