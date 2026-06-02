@@ -428,11 +428,11 @@ const PDFGenerator = (() => {
 
   // Footer: booklet code (left, italic) + page number (centre, italic)
   function drawFooter(doc, footerCode, pageNum) {
-    const footerY = PAGE_H - 7;
+    const footerY = PAGE_H - 15;
     doc.setFontSize(8.5);
     doc.setFont('helvetica', 'italic');   // ← italic footer
     doc.setTextColor(0, 0, 0);
-    doc.text(footerCode, MARGIN_LEFT_TEXT, footerY);
+    doc.text(footerCode, 12, footerY);
     doc.text(String(pageNum), (MARGIN_LEFT_LINE + MARGIN_RIGHT_LINE) / 2, footerY, { align: 'center' });
   }
 
