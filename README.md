@@ -49,14 +49,6 @@ npx live-server QCAB
 
 ---
 
-## GitHub Pages Deployment
-
-1. Create a GitHub repository
-2. Push all files to the `main` branch (keeping directory structure intact)
-3. Go to **Settings → Pages → Source → Deploy from branch → main / root**
-4. Your app will be live at `https://<username>.github.io/<repo-name>/`
-
----
 
 ## Database Format (`data/questions.json`)
 
@@ -142,25 +134,7 @@ In the PDF Settings modal, enter any code:
 
 ---
 
-## Tech Stack
 
-| Component       | Technology                           |
-|----------------|--------------------------------------|
-| Markup          | HTML5                                |
-| Styling         | CSS3 (custom properties, grid, flex) |
-| Logic           | Vanilla JavaScript ES6+ (modules pattern) |
-| PDF Generation  | [jsPDF 2.5.1](https://github.com/parallax/jsPDF) via CDN |
-| Fonts           | Google Fonts (EB Garamond, Instrument Sans, DM Mono) |
-
-No frameworks. No build tools. No backend. Works offline after first load (fonts excluded).
-
----
-
-## Extending the Database
-
-To add more questions, simply append objects to `data/questions.json` following the schema above. The app auto-populates all filter dropdowns from the data at runtime.
-
----
 
 ## License
 
