@@ -1774,7 +1774,7 @@ const QUESTIONS_DATA_GEO_OPT =
     "question": "Describe the regional variations of health indicators among the Indian States.",
     "marks": 15,
     "source": "UPSC"
-  }
+  },
 
 
 
