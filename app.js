@@ -70,6 +70,12 @@ const DataLayer = (() => {
        } else {
          console.warn('GS4_QUE not found.');
        }
+     //  _____ Load ESSAYs_______
+      if (typeof ESSAY_QUE !== 'undefined') {
+         combinedQuestions.push(...ESSAY_QUE);
+       } else {
+         console.warn('ESSAY_QUE not found.');
+       }
    
        // 2. Load geo questions and change their ID format
        if (typeof QUESTIONS_DATA_GEO_OPT !== 'undefined') {
