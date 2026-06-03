@@ -1131,7 +1131,7 @@ const ESSAY_QUE =
   {
     "id": "14ESS95",
     "year": 2014,
-    "paper": "GS3 / Culture",
+    "paper": "Essay",
     "subject": "Section B",
     "subtopic": "Social Issues / Sports Governance",
     "keywords": ["Olympic Gold Realities India", "Sports Infrastructure Deficiencies", "Athletic Ecosystem Funding", "Sports Talent Cultivation Challenges", "International Sporting Success Benchmarks"],
