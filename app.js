@@ -56,13 +56,19 @@ const DataLayer = (() => {
        if (typeof GS2_QUE !== 'undefined') {
          combinedQuestions.push(...GS2_QUE);
        } else {
-         console.warn('GS1_QUE not found.');
+         console.warn('GS2_QUE not found.');
        }
      //  _____ Load GS3_______
       if (typeof GS3_QUE !== 'undefined') {
          combinedQuestions.push(...GS3_QUE);
        } else {
-         console.warn('GS1_QUE not found.');
+         console.warn('GS3_QUE not found.');
+       }
+     //  _____ Load GS4_______
+      if (typeof GS4_QUE !== 'undefined') {
+         combinedQuestions.push(...GS4_QUE);
+       } else {
+         console.warn('GS4_QUE not found.');
        }
    
        // 2. Load geo questions and change their ID format
