@@ -41,11 +41,11 @@ const DataLayer = (() => {
      let combinedQuestions = [];
 
        // 1. Load regular questions as they are
-       if (typeof QUESTIONS_DATA !== 'undefined') {
-         combinedQuestions.push(...QUESTIONS_DATA);
-       } else {
-         console.warn('QUESTIONS_DATA not found.');
-       }
+       // if (typeof QUESTIONS_DATA !== 'undefined') {
+       //   combinedQuestions.push(...QUESTIONS_DATA);
+       // } else {
+       //   console.warn('QUESTIONS_DATA not found.');
+       // }
      //  _____ Load GS1_______
        if (typeof GS1_QUE !== 'undefined') {
          combinedQuestions.push(...GS1_QUE);
