@@ -33,7 +33,7 @@ const GS2_QUE =
     "keywords": ["pardon power", "president power", "pardoning", "india vs usa", "article 72"],
     "qno": "Q3",
     "question": "Compare and contrast the President’s power to pardon in India and in the USA. Are there any limits to it in both the countries? What are ‘preemptive pardons’ ?",
-    "marks": 15,
+    "marks": 10,
     "source": "UPSC"
   },
   {
